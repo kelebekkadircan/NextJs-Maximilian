@@ -9,7 +9,6 @@ function HomePage() {
   return (
     <>
       <div>
-        <h1>Burası Ana sayfa</h1>
 
         <EventList items={featuerdEvents} />
       </div>

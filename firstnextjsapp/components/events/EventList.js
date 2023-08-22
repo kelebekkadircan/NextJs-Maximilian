@@ -8,7 +8,6 @@ function EventList(props) {
 
     return (
         <>
-            <div>EventList</div>
             <ul className={styles.list}>
                 {items.map((event) => (
                     <EventItem

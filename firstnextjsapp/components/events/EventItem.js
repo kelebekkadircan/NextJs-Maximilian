@@ -24,7 +24,7 @@ function EventItem(props) {
 
     return (
         <>
-            <div>EventItem</div>
+
 
             <li className={styles.item}>
                 <img src={'/' + image} alt={title} />
