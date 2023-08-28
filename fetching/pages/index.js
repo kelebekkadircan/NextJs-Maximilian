@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import fs from 'fs/promises'
 import path from 'path'
 import { redirect } from 'next/dist/server/api-utils'
+import Link from 'next/link'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,7 +19,7 @@ export default function Home(props) {
     <>
       <ul>
         {products.map((product) => (
-          <li key={product.id}> {product.title} </li>
+          <li key={product.id}><Link href={`/products/${product.id}`}> {product.title} </Link>  </li>
         ))}
       </ul>
 
