@@ -12,11 +12,13 @@ function userProfile(props) {
     )
 }
 
-export default userProfile
+export default userProfile;
 
 export async function getServerSideProps(context) {
 
     const { params, req, res } = context
+
+    console.log('server side code');
 
 
 
