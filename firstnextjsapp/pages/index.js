@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { getFeaturedEvents } from "@/helpers/api-util";
 import Link from "next/link";
 import Head from "next/head";
+import NewsletterRegistration from "@/components/input/newsletter-registration";
 
 function HomePage(props) {
 
@@ -19,7 +20,7 @@ function HomePage(props) {
           <title>NextJs Events</title>
           <meta name="Description" content="find a lot of greate events that allow you to evolve" />
         </Head>
-
+        <NewsletterRegistration />
         <EventList items={props.events} />
 
 
